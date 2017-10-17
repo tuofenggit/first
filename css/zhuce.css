@@ -1,0 +1,28 @@
+#zc {
+    text-align: center;
+    font-size: 18px;
+}
+
+div#divtitle {
+
+    margin: auto;
+    padding: inherit;
+    text-align: center;
+    background:#c3c3c3 ;
+    border: 1px #e5eecc;
+
+}
+
+div.panel,p.flip
+{
+    margin:0px;
+    padding:5px;
+    text-align:center;
+    background:#e5eecc;
+    border:solid 1px #c3c3c3;
+}
+div.panel
+{
+    height:120px;
+    display:none;
+}

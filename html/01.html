@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <script src="../js/jquery-3.2.1.min.js"></script>
+
+
+    <script type="text/javascript">
+        $(function () {
+            $('#c1').mouseout(function () {
+
+                $('#div1').css('display', 'none');
+            });
+
+            $('#c1').mouseover(function () {
+                $('#div1').css('display', 'block');
+                $('#div1').css('color', 'red');
+            });
+        })
+
+    </script>
+
+</head>
+<body>
+
+
+<input type="checkbox" id="c1"> 点我消失
+
+<div id="div1" style="display: none">
+    我是标记
+</div>
+
+
+<hr>
+
+<p> 这不是一个在div内的段落</p>
+
+<div id="div2">
+    <p> 这是一个段落</p>
+
+</div>
+
+<div id="div3">
+    <p> 这是一个在div3内段落</p>
+    <p> 这是一个在div3内的第二个段落</p>
+</div>
+
+</body>
+</html>
