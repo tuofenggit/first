@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+
+<script type="text/javascript" src="../js/jquery-3.2.1.min.js"></script>
+
+<style type="text/css" >
+    div {
+        width: 100px;
+        height: 100px;
+        border: 1px solid bisque;
+    }
+    .
+
+    div.box {
+        background: rebeccapurple;
+    }
+
+</style>
+
+<script type="text/javascript">
+    
+    $(function () {
+        $('#bt1').click(function () {
+            //$('#div1').attr('class','box');
+            //$('#div1').addClass('box');
+            $('#div1').toggleClass('box');
+        })
+
+        $("input:not('#bt1')").click(function () {
+           var type=$(this).attr("data-type")
+           var value=$(this).attr("data-value");
+           $('#div1').css(type,value);
+
+
+        })
+    });
+
+    function chenge(name,value) {
+        var div = document.getElementById('div1');
+        div.style[name]=value;
+    }
+
+    
+</script>
+
+<body>
+
+    <input id="bt1" type="button" value="改变div class属性" >
+
+    <input id="bt2" type="button" value="变宽" data-type="width" data-value="200">
+
+    <input id="bt3" type="button" value="变高" data-type="height" data-value="200">
+
+    <input id="bt4" type="button" value="变颜色" data-type="box" data-value="red">
+
+
+    <br /><br /><br />
+
+    <div id="div1">
+
+
+    </div>
+</body>
+</html>

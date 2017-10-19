@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+
+<script type="text/javascript" src="../js/jquery-3.2.1.min.js"></script>
+
+<style type="text/css">
+
+    #div1 .active{
+        background: yellow;
+    }
+
+    #div1 div {
+        width: 200px;
+        height: 200px;
+        background: #c3c3c3;
+        border: 1px solid #e5eecc;
+        display: none;
+    }
+
+</style>
+
+<script type="text/javascript">
+   $(function () {
+       $('input').click(function () {
+           $('input').removeClass();
+           $(this).addClass('active');
+          // $('div').find('div').css('display','none');
+           $("#div1").find("div:visible").hide();
+           $("#div1").find("div").eq($(this).attr("data-value")).show();
+           <!--$($('div').find('div')[$(this).attr("data-value")]).css('display','block');-->
+
+       })
+   })
+
+</script>
+<body>
+<div id="div1">
+
+    <input class="active" type="button" value="学习" data-value="0">
+    <input type="button" value="测试" data-value="1">
+    <input type="button" value="教育" data-value="2">
+    <input type="button" value="招生" data-value="3">
+
+    <div style="display: block">111</div>
+    <div>222</div>
+    <div>333</div>
+    <div>444</div>
+</div>
+</body>
+
+
+</html>
