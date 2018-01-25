@@ -43,19 +43,21 @@ body {
 设置运费相关
  */
 .main_styl.min{
-    width: 100%;
     height: 20px;
     margin: 1px auto;
 }
 
-.main_styl.min div {
-    float: left;
-}
+
 
 .right_div {
 
     float: right;
     text-align: right;
+}
+.left_div {
+    width: 30%;
+    float: left;
+    text-align: left;
 }
 
 
