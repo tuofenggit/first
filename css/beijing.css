@@ -17,25 +17,47 @@ body {
 
 }
 
-.main_styl.sp div{
+.main_styl.sp div {
     float: left;
 }
 
-.main_styl.sp.firt {
-    width: 40%;
+.sp.firt {
+    margin-left: 0px;
+    width: 30%;
     height: 100%;
     background-image: url("../img/timg1.jpg");
     background-size: 100% 100%;
 }
 
-.main_styl.sp.secound {
-    width: 40%;
+.sp.secound {
+    margin-left: 10px;
+    max-width: 65%;
 }
-
 
 #example1 div {
     margin: 2px;
 }
+
+
+/**
+设置运费相关
+ */
+.main_styl.min{
+    width: 100%;
+    height: 20px;
+    margin: 1px auto;
+}
+
+.main_styl.min div {
+    float: left;
+}
+
+.right_div {
+
+    float: right;
+    text-align: right;
+}
+
 
 input {
     border: none;
@@ -50,12 +72,7 @@ textarea {
     width: 100%;
 }
 
-
 #sp {
     float: left;
 }
 
-#sp div{
-    width: 40%;
-    height: 100%;
-}
