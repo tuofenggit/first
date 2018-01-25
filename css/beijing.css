@@ -1,0 +1,61 @@
+body {
+    background-color: #f6f6f6;
+    font-family: "宋体";
+}
+
+.main_styl {
+    width: 95%;
+    height: 80px;
+    margin: 10px auto;
+    background-color: white;
+    overflow: hidden;
+    padding: 10px;
+    font-size: 14px;
+    -moz-box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.5);
+    -webkit-box-shadow: 1px 2px 4px rgba(0, 0, 0, .5);
+    box-shadow: 1px 2px 4px rgba(0, 0, 0, .1);
+
+}
+
+.main_styl.sp div{
+    float: left;
+}
+
+.main_styl.sp.firt {
+    width: 40%;
+    height: 100%;
+    background-image: url("../img/timg1.jpg");
+    background-size: 100% 100%;
+}
+
+.main_styl.sp.secound {
+    width: 40%;
+}
+
+
+#example1 div {
+    margin: 2px;
+}
+
+input {
+    border: none;
+    background-color: transparent;
+    outline: none;
+}
+
+textarea {
+    border: none;
+    outline: none;
+    resize: none;
+    width: 100%;
+}
+
+
+#sp {
+    float: left;
+}
+
+#sp div{
+    width: 40%;
+    height: 100%;
+}
